@@ -1,0 +1,37 @@
+﻿<Page x:Class="Podgotovka.PReg"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Podgotovka"
+      mc:Ignorable="d" 
+      d:DesignHeight="900" d:DesignWidth="1600"
+      Title="PReg">
+
+    <Grid>
+        <Grid.Background>
+            <ImageBrush Stretch="UniformToFill" ImageSource="Res/back.png"></ImageBrush>
+        </Grid.Background>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition Width="200"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Column="0" Width="400" VerticalAlignment="Center">
+            <TextBox Name="RLTB" Height="30"></TextBox>
+            <TextBox Name="RNTB" Height="30"></TextBox>
+            <TextBox Name="RPTB" Height="30"></TextBox>
+            <Button  Margin="0,20" Height="30" FontSize="20" Click="Registration">Зарегестрироваться</Button>
+        </StackPanel>
+        
+        <StackPanel Grid.Column="2" Width="400" VerticalAlignment="Center">
+            <TextBox Name="ALTB" Height="30"></TextBox>
+            <TextBox Name="APTB" Height="30"></TextBox>
+            <Button Margin="0,20" Height="30" FontSize="20" Click="Autorisation">Авторизироваться</Button>
+        </StackPanel>
+        
+        
+    </Grid>
+</Page>
